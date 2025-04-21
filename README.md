@@ -1,31 +1,46 @@
-# React + TypeScript + Vite
+# 🎼 Songwriting Toolkit – Fullstack Music Maker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fullstack app built for capturing song ideas in a fun and efficient way. Write lyrics, record audio, manage ideas with a to-do list, and even tune your guitar – all in one place.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎤 Record audio using your microphone
+- 💾 Save recordings to the backend with custom names
+- 📝 Write and store song lyrics (with sections like verses and choruses)
+- ✅ Use a to-do list to track your creative thoughts
+- 🎸 Interactive guitar tuner that plays tones for standard tuning (E A D G B E)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Frontend
+- React (with TypeScript)
+- Vite
+- Styled with a retro, pixel-game-inspired dark UI
 
-- Configure the top-level `parserOptions` property like this:
+### Backend
+- Node.js
+- Express
+- SQLite (lightweight file-based DB)
+- TypeScript
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 🚀 Getting Started
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# Recording_page
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/songwriting-toolkit.git
+cd songwriting-toolkit
+
+cd backend
+npm install
+
+cd ../frontend
+npm install
+
+cd backend
+npm run dev
+# or node index.js
+
+cd frontend
+npm run dev
+
